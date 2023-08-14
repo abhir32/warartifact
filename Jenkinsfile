@@ -3,7 +3,7 @@ pipeline{
         stages{
             stage("build stage") {
                 steps{
-                    sh 'mvn -f warartifact/pom.xml clean package'
+                    sh 'mvn clean package'
                 }
                 post{
                     success {
